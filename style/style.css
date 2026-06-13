@@ -51,7 +51,7 @@ body {
 /* classes */
 .about {
     width: 80%;
-    height: 40%;
+    height: 50%;
 
     position: absolute;
     top: 50%;
@@ -101,6 +101,7 @@ body {
 #nour {
     background-color: var(--main);
     border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 #nour img {
