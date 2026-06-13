@@ -14,6 +14,30 @@ p, sub, sup, h1, h2, h3, h4, h5, h6 {
     color: var(--main);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 10px;
+}
+
+sub {
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+h3 {
+    font-size: 1em;
+    opacity: 0.7;
+}
+
+a {
+    color: var(--main);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+p, a {
+    padding-bottom: 10px;
+}
+
 body {
     position: fixed;
     top: 0;
@@ -26,19 +50,67 @@ body {
 
 /* classes */
 .about {
+    width: 80%;
+    height: 30%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered {
     display: flex;
-    margin: auto;
-    width: fit-content;
-    height: 100%;
+    flex-direction: column;
 }
 
-.about * {
+.centered * {
     margin: auto;
 }
 
-.ps {
-    font-weight: 300;
-    font-size: 0.75em;
+.links {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 700px) {
+    .links * {
+        font-size: 2.5vw;
+    }
+}
+
+.links p {
+    margin-top: auto;
+    margin-bottom: auto;
+    user-select: none;
+}
+
+.links a {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 /* ids */
+#music-taste {
+    opacity: 0.7;
+    margin-right: 2px;
+}
+
+#nour {
+    background-color: var(--main);
+    border-radius: 4px;
+}
+
+#nour img {
+    border-radius: 4px;
+    max-width: 100px;
+    opacity: 0.3;
+    filter: saturate(0);
+}
