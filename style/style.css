@@ -69,6 +69,10 @@ body {
 }
 
 .links {
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: row;
 }
@@ -86,8 +90,6 @@ body {
 }
 
 .links a {
-    margin-top: auto;
-    margin-bottom: auto;
     margin-right: 20px;
     margin-left: 20px;
 }
